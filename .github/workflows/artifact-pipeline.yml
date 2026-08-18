@@ -1,0 +1,27 @@
+name: Primeira Liga artifact pipeline
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 7 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portugal-artifact-pipeline
+  cancel-in-progress: false
+
+jobs:
+  build-and-validate:
+    uses: gmalbert/pitch-oracle-core/.github/workflows/precompute-consumer.yml@2907629108d26c436a8b5863f2c067ef6a320bec
+    with:
+      core_ref: v1.3.27
+      league_key: portugal
+      data_command: >-
+        python -m combine_raw_data &&
+        python -m fetch_upcoming_fixtures &&
+        python -m prepare_model_data
+      training_command: python -m train_models
+      prediction_command: python scripts/precompute_predictions.py
+    secrets: inherit

@@ -21,7 +21,7 @@ def main() -> None:
     environment["PITCH_ORACLE_LEAGUE"] = LEAGUE_CONFIG.key
     commands = (
         (sys.executable, "-m", "combine_raw_data"),
-        (sys.executable, "-m", "fetch_upcoming_fixtures"),
+        (sys.executable, "scripts/fetch_fixtures_fd.py"),
         (sys.executable, "-m", "prepare_model_data"),
         (
             sys.executable, "-m", "pitch_oracle_core.audit_cli",

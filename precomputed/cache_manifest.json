@@ -3,7 +3,7 @@
   "core_version": "1.3.27",
   "feature_policy_version": 3,
   "league": "portugal",
-  "created_at": "2026-08-19T00:47:08.942152+00:00",
+  "created_at": "2026-08-19T01:00:28.111222+00:00",
   "artifacts": {
     "preprocessed_data": {
       "path": "precomputed/preprocessed_data.pkl",
@@ -47,8 +47,8 @@
     },
     "upcoming_predictions": {
       "path": "data_files/upcoming_predictions.csv",
-      "bytes": 106649,
-      "sha256": "e8c7bd25c12394535df19936d9fd3b5ce3c0d04408b28f46b29d8186d5e03714"
+      "bytes": 116125,
+      "sha256": "05aa11d7ff5f15425f63b89d60c8e7f5cbef3bef5efd21ffd9f2674ed03fc9f5"
     }
   }
 }

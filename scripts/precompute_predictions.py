@@ -51,6 +51,7 @@ def generate() -> Path:
             data_dir=ROOT / "data_files",
             timezone=LEAGUE_CONFIG.sources.weather_timezone,
         )
+    upcoming = _add_goal_averages(historical, upcoming)
     contract = FeatureContract.load(ROOT / "precomputed" / "preprocessed_data.pkl")
     candidate = production_candidate()
     probabilities = production_probabilities(
@@ -65,6 +66,29 @@ def generate() -> Path:
     predictions = _merge_odds_and_recommend(predictions)
     predictions.to_csv(output, index=False)
     return output
+
+
+def _add_goal_averages(historical: pd.DataFrame, upcoming: pd.DataFrame) -> pd.DataFrame:
+    """Add HomeGoalsAve/AwayGoalsAve from recent history for each team."""
+    date_col = "MatchDate" if "MatchDate" in historical.columns else "Date"
+    home_avgs = (
+        historical.sort_values(date_col)
+        .groupby("HomeTeam")[["HomeGoalsAve"]]
+        .last()
+        .rename(columns={"HomeGoalsAve": "HomeGoalsAve_lookup"})
+    )
+    away_avgs = (
+        historical.sort_values(date_col)
+        .groupby("AwayTeam")[["AwayGoalsAve"]]
+        .last()
+        .rename(columns={"AwayGoalsAve": "AwayGoalsAve_lookup"})
+    )
+    upcoming = upcoming.merge(home_avgs, left_on="HomeTeam", right_index=True, how="left")
+    upcoming = upcoming.merge(away_avgs, left_on="AwayTeam", right_index=True, how="left")
+    upcoming["HomeGoalsAve"] = upcoming["HomeGoalsAve_lookup"]
+    upcoming["AwayGoalsAve"] = upcoming["AwayGoalsAve_lookup"]
+    upcoming.drop(columns=["HomeGoalsAve_lookup", "AwayGoalsAve_lookup"], inplace=True)
+    return upcoming
 
 
 def _merge_odds_and_recommend(predictions: pd.DataFrame) -> pd.DataFrame:

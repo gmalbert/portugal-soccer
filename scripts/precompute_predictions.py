@@ -62,8 +62,9 @@ def generate() -> Path:
         models_dir=ROOT / "models",
     )
     predictions = build_prediction_frame(upcoming, probabilities)
-    output = ROOT / "data_files" / "upcoming_predictions.csv"
     predictions = _merge_odds_and_recommend(predictions)
+    predictions = _merge_referee_assignments(predictions)
+    output = ROOT / "data_files" / "upcoming_predictions.csv"
     predictions.to_csv(output, index=False)
     return output
 
@@ -93,6 +94,41 @@ def _add_goal_averages(historical: pd.DataFrame, upcoming: pd.DataFrame) -> pd.D
     upcoming["AwayGoalsAve"] = upcoming["_a1"].fillna(upcoming["_a2"]).fillna(upcoming["_a3"])
     upcoming.drop(columns=["_h1", "_h2", "_h3", "_a1", "_a2", "_a3"], inplace=True)
     return upcoming
+
+
+def _merge_referee_assignments(predictions: pd.DataFrame) -> pd.DataFrame:
+    """Attach published referee assignments to the prediction cache."""
+    merge = predictions.copy()
+    if "Referee" in merge.columns:
+        return merge
+    merge["Referee"] = "Not yet assigned"
+    for column in ("RefereeCareerGames", "RefereeCareerYellow", "RefereeCareerRed"):
+        merge[column] = pd.NA
+
+    referees_path = ROOT / "data_files" / "referees.csv"
+    if not referees_path.exists():
+        return merge
+    assignments = pd.read_csv(referees_path)
+    if assignments.empty or "Referee" not in assignments:
+        return merge
+
+    merge["Date"] = pd.to_datetime(
+        merge["Date"], errors="coerce"
+    ).dt.strftime("%Y-%m-%d")
+    assignments["Date"] = pd.to_datetime(
+        assignments["Date"], errors="coerce"
+    ).dt.strftime("%Y-%m-%d")
+    keys = ["HomeTeam", "AwayTeam", "Date"]
+    merge = merge.drop(columns=["Referee", "RefereeCareerGames",
+                                "RefereeCareerYellow", "RefereeCareerRed"],
+                       errors="ignore")
+    merge = merge.merge(
+        assignments[keys + ["Referee", "RefereeCareerGames",
+                            "RefereeCareerYellow", "RefereeCareerRed"]],
+        on=keys, how="left",
+    )
+    merge["Referee"] = merge["Referee"].fillna("Not yet assigned")
+    return merge
 
 
 def _merge_odds_and_recommend(predictions: pd.DataFrame) -> pd.DataFrame:

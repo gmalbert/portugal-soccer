@@ -60,9 +60,71 @@ def generate() -> Path:
         production_candidate=candidate,
         models_dir=ROOT / "models",
     )
+    predictions = build_prediction_frame(upcoming, probabilities)
     output = ROOT / "data_files" / "upcoming_predictions.csv"
-    build_prediction_frame(upcoming, probabilities).to_csv(output, index=False)
+    predictions = _merge_odds_and_recommend(predictions)
+    predictions.to_csv(output, index=False)
     return output
+
+
+def _merge_odds_and_recommend(predictions: pd.DataFrame) -> pd.DataFrame:
+    """Merge Bzzoiro odds and compute bet recommendations."""
+    from pitch_oracle_core.best_bets import market_metrics
+
+    odds_path = ROOT / "data_files" / "odds.csv"
+    if not odds_path.exists():
+        return predictions
+
+    odds = pd.read_csv(odds_path)
+    if odds.empty:
+        return predictions
+
+    merge_cols = ["HomeTeam", "AwayTeam", "Date"]
+    predictions = predictions.merge(odds, on=merge_cols, how="left", suffixes=("", "_odds"))
+
+    MIN_EDGE = 0.03
+    MIN_EV = 0.03
+
+    outcomes = [
+        ("HomeWin_Prob", "OddsHome", "Home Win"),
+        ("Draw_Prob", "OddsDraw", "Draw"),
+        ("AwayWin_Prob", "OddsAway", "Away Win"),
+    ]
+
+    for idx, row in predictions.iterrows():
+        probs = [_safe_float(row.get(c)) for c, _, _ in outcomes]
+        odds_vals = [_safe_float(row.get(c)) for _, c, _ in outcomes]
+        if any(p is None for p in probs) or any(o is None or o <= 1 for o in odds_vals):
+            continue
+        total = sum(probs)
+        if total <= 0:
+            continue
+        probs = [p / total for p in probs]
+
+        best_edge = 0
+        best_outcome = ""
+        best_ev = 0
+        for prob, odds_val, label in zip(probs, odds_vals, outcomes):
+            _, edge, ev = market_metrics(prob, odds_val, odds_vals)
+            if edge > best_edge:
+                best_edge = edge
+                best_outcome = label[2]
+                best_ev = ev
+
+        if best_edge >= MIN_EDGE and best_ev >= MIN_EV:
+            predictions.at[idx, "BetRecommendation"] = f"Bet {best_outcome}"
+            predictions.at[idx, "BetReason"] = (
+                f"{best_edge:.1%} edge over market, {best_ev:.1%} expected value"
+            )
+
+    return predictions
+
+
+def _safe_float(value) -> float | None:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
 
 
 if __name__ == "__main__":

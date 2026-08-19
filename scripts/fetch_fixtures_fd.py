@@ -18,6 +18,8 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
+from team_name_mapping import normalize_team_name
+
 ROOT = Path(__file__).resolve().parents[1]
 
 # football-data.org free-tier competition code for Primeira Liga
@@ -40,6 +42,7 @@ def fetch_fixtures(
     api_key: str | None = None,
     output_dir: Path | str | None = None,
     timezone_name: str = "Europe/Lisbon",
+    aliases: dict[str, str] | None = None,
 ) -> pd.DataFrame:
     key = api_key or os.environ.get("FD_API_KEY", "")
     if not key:
@@ -61,8 +64,8 @@ def fetch_fixtures(
         rows.append({
             "Date": local.strftime("%Y-%m-%d"),
             "Time": local.strftime("%H:%M"),
-            "HomeTeam": match["homeTeam"]["shortName"],
-            "AwayTeam": match["awayTeam"]["shortName"],
+            "HomeTeam": normalize_team_name(match["homeTeam"]["shortName"], aliases),
+            "AwayTeam": normalize_team_name(match["awayTeam"]["shortName"], aliases),
             "Status": _STATUS_MAP.get(status, status),
             "kickoff_utc": utc_date.isoformat(),
         })
@@ -76,6 +79,10 @@ def fetch_fixtures(
 
 
 if __name__ == "__main__":
+    import sys
+    if str(ROOT) not in sys.path:
+        sys.path.insert(0, str(ROOT))
     from dotenv import load_dotenv
+    from config import LEAGUE_CONFIG
     load_dotenv(ROOT / ".env", override=False)
-    fetch_fixtures()
+    fetch_fixtures(aliases=LEAGUE_CONFIG.team_aliases)

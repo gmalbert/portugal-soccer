@@ -22,6 +22,7 @@ def main() -> None:
     commands = (
         (sys.executable, "-m", "combine_raw_data"),
         (sys.executable, "scripts/fetch_fixtures_fd.py"),
+        (sys.executable, "scripts/fetch_odds_bzzoiro.py"),
         (sys.executable, "-m", "prepare_model_data"),
         (
             sys.executable, "-m", "pitch_oracle_core.audit_cli",
@@ -31,6 +32,7 @@ def main() -> None:
         (sys.executable, "-m", "train_models"),
         (sys.executable, "-m", "precompute_database"),
         (sys.executable, "scripts/precompute_predictions.py"),
+        (sys.executable, "-m", "pitch_oracle_core.best_bets"),
         (sys.executable, "-m", "build_cache_manifest"),
         (sys.executable, "scripts/verify_consumer.py"),
     )

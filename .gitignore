@@ -8,6 +8,8 @@ venv/
 !.env.example
 *.log
 .cache.sqlite
+.cache/
+cache/
 .playwright-cli/
 *code-workspace
 .commandcode/

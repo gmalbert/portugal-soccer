@@ -71,23 +71,27 @@ def generate() -> Path:
 def _add_goal_averages(historical: pd.DataFrame, upcoming: pd.DataFrame) -> pd.DataFrame:
     """Add HomeGoalsAve/AwayGoalsAve from recent history for each team."""
     date_col = "MatchDate" if "MatchDate" in historical.columns else "Date"
-    home_avgs = (
-        historical.sort_values(date_col)
-        .groupby("HomeTeam")[["HomeGoalsAve"]]
-        .last()
-        .rename(columns={"HomeGoalsAve": "HomeGoalsAve_lookup"})
-    )
-    away_avgs = (
-        historical.sort_values(date_col)
-        .groupby("AwayTeam")[["AwayGoalsAve"]]
-        .last()
-        .rename(columns={"AwayGoalsAve": "AwayGoalsAve_lookup"})
-    )
+    hist = historical.sort_values(date_col)
+
+    # Home goals: HomeGoalsAve -> home_goals_for_l5 -> mean(FullTimeHomeGoals)
+    home_avgs = hist.groupby("HomeTeam").last()[["HomeGoalsAve"]].rename(columns={"HomeGoalsAve": "_h1"})
+    home_fb1 = hist.groupby("HomeTeam").last()[["home_goals_for_l5"]].rename(columns={"home_goals_for_l5": "_h2"})
+    home_fb2 = hist.groupby("HomeTeam")["FullTimeHomeGoals"].mean().rename("_h3")
+    # Away goals: AwayGoalsAve -> away_goals_for_l5 -> mean(FullTimeAwayGoals)
+    away_avgs = hist.groupby("AwayTeam").last()[["AwayGoalsAve"]].rename(columns={"AwayGoalsAve": "_a1"})
+    away_fb1 = hist.groupby("AwayTeam").last()[["away_goals_for_l5"]].rename(columns={"away_goals_for_l5": "_a2"})
+    away_fb2 = hist.groupby("AwayTeam")["FullTimeAwayGoals"].mean().rename("_a3")
+
     upcoming = upcoming.merge(home_avgs, left_on="HomeTeam", right_index=True, how="left")
+    upcoming = upcoming.merge(home_fb1, left_on="HomeTeam", right_index=True, how="left")
+    upcoming = upcoming.merge(home_fb2, left_on="HomeTeam", right_index=True, how="left")
     upcoming = upcoming.merge(away_avgs, left_on="AwayTeam", right_index=True, how="left")
-    upcoming["HomeGoalsAve"] = upcoming["HomeGoalsAve_lookup"]
-    upcoming["AwayGoalsAve"] = upcoming["AwayGoalsAve_lookup"]
-    upcoming.drop(columns=["HomeGoalsAve_lookup", "AwayGoalsAve_lookup"], inplace=True)
+    upcoming = upcoming.merge(away_fb1, left_on="AwayTeam", right_index=True, how="left")
+    upcoming = upcoming.merge(away_fb2, left_on="AwayTeam", right_index=True, how="left")
+
+    upcoming["HomeGoalsAve"] = upcoming["_h1"].fillna(upcoming["_h2"]).fillna(upcoming["_h3"])
+    upcoming["AwayGoalsAve"] = upcoming["_a1"].fillna(upcoming["_a2"]).fillna(upcoming["_a3"])
+    upcoming.drop(columns=["_h1", "_h2", "_h3", "_a1", "_a2", "_a3"], inplace=True)
     return upcoming
 
 
@@ -139,6 +143,10 @@ def _merge_odds_and_recommend(predictions: pd.DataFrame) -> pd.DataFrame:
             predictions.at[idx, "BetRecommendation"] = f"Bet {best_outcome}"
             predictions.at[idx, "BetReason"] = (
                 f"{best_edge:.1%} edge over market, {best_ev:.1%} expected value"
+            )
+        elif best_edge > 0:
+            predictions.at[idx, "BetReason"] = (
+                f"Closest edge: {best_outcome} at {best_edge:.1%} — below 3% threshold"
             )
 
     return predictions

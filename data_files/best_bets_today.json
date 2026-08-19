@@ -1,10 +1,61 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-08-19T00:24:26.293532+00:00",
+    "generated_at": "2026-08-19T00:29:13.949125+00:00",
     "model_version": "core-1.3.27",
-    "season": "2026",
-    "notes": "No Primeira Liga predictions for 2026-08-18"
+    "season": "2026"
   },
-  "bets": []
+  "bets": [
+    {
+      "game_date": "2026-08-23",
+      "game_time": "20:30",
+      "game": "Arouca @ Porto",
+      "home_team": "Porto",
+      "away_team": "Arouca",
+      "bet_type": "Match Result",
+      "pick": "Draw",
+      "confidence": 0.2793,
+      "edge": 0.1358,
+      "market_probability": 0.1434,
+      "expected_value": 0.8207,
+      "tier": "Elite",
+      "odds": 552,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-08-23",
+      "game_time": "20:30",
+      "game": "Arouca @ Porto",
+      "home_team": "Porto",
+      "away_team": "Arouca",
+      "bet_type": "Match Result",
+      "pick": "Away Win",
+      "confidence": 0.2813,
+      "edge": 0.2105,
+      "market_probability": 0.0708,
+      "expected_value": 2.713,
+      "tier": "Elite",
+      "odds": 1220,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-08-24",
+      "game_time": "20:15",
+      "game": "Casa Pia @ Gil Vicente",
+      "home_team": "Gil Vicente",
+      "away_team": "Casa Pia",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.6443,
+      "edge": 0.0896,
+      "market_probability": 0.5546,
+      "expected_value": 0.0824,
+      "tier": "Strong",
+      "odds": -147,
+      "line": null,
+      "league": "Primeira Liga"
+    }
+  ]
 }

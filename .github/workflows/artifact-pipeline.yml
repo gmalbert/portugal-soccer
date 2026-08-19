@@ -24,6 +24,7 @@ jobs:
         python -m combine_raw_data &&
         python scripts/fetch_fixtures_fd.py &&
         python scripts/fetch_odds_bzzoiro.py &&
+        python scripts/fetch_referees_bzzoiro.py &&
         python -m prepare_model_data
       training_command: python -m train_models
       prediction_command: python scripts/precompute_predictions.py

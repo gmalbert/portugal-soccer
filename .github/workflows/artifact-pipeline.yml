@@ -3,7 +3,9 @@ name: Primeira Liga artifact pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: "20 7 * * *"
+    # Run daily at 07:20 UTC during the Primeira Liga season (Aug–May).
+    # The 6th and 7th months (June, July) are off-season — no runs.
+    - cron: "20 7 * 1-5,8-12 *"
 
 permissions:
   contents: write
@@ -24,7 +26,5 @@ jobs:
         python scripts/fetch_odds_bzzoiro.py &&
         python -m prepare_model_data
       training_command: python -m train_models
-      prediction_command: >-
-        python scripts/precompute_predictions.py &&
-        python -m pitch_oracle_core.best_bets
+      prediction_command: python scripts/precompute_predictions.py
     secrets: inherit

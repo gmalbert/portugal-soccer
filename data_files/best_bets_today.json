@@ -1,27 +1,10 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-08-24T08:01:34.405610+00:00",
+    "generated_at": "2026-08-25T07:53:08.920773+00:00",
     "model_version": "core-1.3.29",
-    "season": "2026"
+    "season": "2026",
+    "notes": "No qualifying Primeira Liga picks"
   },
-  "bets": [
-    {
-      "game_date": "2026-08-24",
-      "game_time": "20:15",
-      "game": "Casa Pia @ Gil Vicente",
-      "home_team": "Gil Vicente",
-      "away_team": "Casa Pia",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.6443,
-      "edge": 0.0941,
-      "market_probability": 0.5502,
-      "expected_value": 0.0953,
-      "tier": "Strong",
-      "odds": -143,
-      "line": null,
-      "league": "Primeira Liga"
-    }
-  ]
+  "bets": []
 }

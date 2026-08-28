@@ -3,12 +3,12 @@
   "core_version": "1.3.29",
   "feature_policy_version": 3,
   "league": "portugal",
-  "created_at": "2026-08-27T10:55:44.578081+00:00",
+  "created_at": "2026-08-28T11:39:06.006756+00:00",
   "artifacts": {
     "preprocessed_data": {
       "path": "precomputed/preprocessed_data.pkl",
       "bytes": 2314290,
-      "sha256": "c4122ca4a96b4bf504d2a70c4b5eca492a0285c6993d24aac9a91e141d67222c"
+      "sha256": "0974eafe739815c65016da0e1b79389bd7592c8c3ee3f3c942c911a284e0fa57"
     },
     "xgb_baseline": {
       "path": "models/xgb_baseline.pkl",
@@ -28,12 +28,12 @@
     "performance": {
       "path": "models/model_performance.pkl",
       "bytes": 1086,
-      "sha256": "38faef144601116ae62e8fdc06ac1010fe0b61cdfd957a2ba55025fabc90c43a"
+      "sha256": "116032e34bc335f8752f1077779bb8e9401ce97cb3ed1e1070de66ebb44beab8"
     },
     "model_metadata": {
       "path": "models/model_metadata.json",
       "bytes": 1267,
-      "sha256": "6599d03b3041aefb7367be9d88e7a3634abe2af4903c1ebfa0d2ed1207b65066"
+      "sha256": "f00228df56e3b620e06f40f78739170fb9685fde97aa5f9146900e8f3b21272b"
     },
     "model_audit": {
       "path": "precomputed/model-audit/model_ablation.json",
@@ -47,8 +47,8 @@
     },
     "upcoming_predictions": {
       "path": "data_files/upcoming_predictions.csv",
-      "bytes": 119343,
-      "sha256": "c2e6f65bf93fe63619fb70183eb97ac481d8884d9c861cc4a1b6f314716c4cd3"
+      "bytes": 120003,
+      "sha256": "d02887c0b62f693e364db973cb150d1bec01d9563c7882b45fdacf82f1c7109a"
     }
   }
 }

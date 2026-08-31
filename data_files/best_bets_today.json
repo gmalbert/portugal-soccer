@@ -1,45 +1,11 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-08-30T07:46:57.059603+00:00",
+    "generated_at": "2026-08-31T07:59:33.096031+00:00",
     "model_version": "core-1.3.29",
     "season": "2026"
   },
   "bets": [
-    {
-      "game_date": "2026-08-30",
-      "game_time": "18:00",
-      "game": "Moreirense @ Casa Pia",
-      "home_team": "Casa Pia",
-      "away_team": "Moreirense",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.4515,
-      "edge": 0.0541,
-      "market_probability": 0.3974,
-      "expected_value": 0.0611,
-      "tier": "Good",
-      "odds": 135,
-      "line": null,
-      "league": "Primeira Liga"
-    },
-    {
-      "game_date": "2026-08-30",
-      "game_time": "20:30",
-      "game": "Gil Vicente @ Famalicao",
-      "home_team": "Famalicao",
-      "away_team": "Gil Vicente",
-      "bet_type": "Match Result",
-      "pick": "Away Win",
-      "confidence": 0.3128,
-      "edge": 0.0481,
-      "market_probability": 0.2647,
-      "expected_value": 0.1042,
-      "tier": "Strong",
-      "odds": 253,
-      "line": null,
-      "league": "Primeira Liga"
-    },
     {
       "game_date": "2026-08-31",
       "game_time": "20:15",
@@ -49,11 +15,11 @@
       "bet_type": "Match Result",
       "pick": "Draw",
       "confidence": 0.2526,
-      "edge": 0.1281,
-      "market_probability": 0.1245,
-      "expected_value": 0.9043,
+      "edge": 0.1347,
+      "market_probability": 0.1178,
+      "expected_value": 1.0155,
       "tier": "Elite",
-      "odds": 654,
+      "odds": 698,
       "line": null,
       "league": "Primeira Liga"
     },
@@ -66,11 +32,11 @@
       "bet_type": "Match Result",
       "pick": "Away Win",
       "confidence": 0.2676,
-      "edge": 0.2014,
-      "market_probability": 0.0662,
-      "expected_value": 2.7941,
+      "edge": 0.203,
+      "market_probability": 0.0645,
+      "expected_value": 2.8985,
       "tier": "Elite",
-      "odds": 1318,
+      "odds": 1357,
       "line": null,
       "league": "Primeira Liga"
     }

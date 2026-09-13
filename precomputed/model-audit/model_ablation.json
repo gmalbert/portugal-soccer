@@ -38,11 +38,11 @@
       "test_rows": 647,
       "metrics": {
         "accuracy": 0.4095826893353941,
-        "log_loss": 2.7758300580571285,
-        "brier_score": 0.853972478125054,
-        "calibration_error": 0.2997024303146255,
+        "log_loss": 2.775830047813043,
+        "brier_score": 0.8539724765476902,
+        "calibration_error": 0.299702430598677,
         "draw_recall": 0.26744186046511625,
-        "mean_confidence": 0.7092851196500197,
+        "mean_confidence": 0.7092851199340712,
         "decisive_lean_rate": 0.6738794435857806
       }
     },
@@ -53,11 +53,11 @@
       "test_rows": 647,
       "metrics": {
         "accuracy": 0.5316846986089645,
-        "log_loss": 0.9599077907261219,
-        "brier_score": 0.5690547430039951,
-        "calibration_error": 0.037848912333594456,
+        "log_loss": 0.9599077907261216,
+        "brier_score": 0.569054743003995,
+        "calibration_error": 0.03784891233359478,
         "draw_recall": 0.20930232558139536,
-        "mean_confidence": 0.5647531186169612,
+        "mean_confidence": 0.5647531186169615,
         "decisive_lean_rate": 0.44976816074188564
       }
     },

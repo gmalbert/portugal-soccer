@@ -3,12 +3,12 @@
   "core_version": "1.3.29",
   "feature_policy_version": 3,
   "league": "portugal",
-  "created_at": "2026-09-12T07:47:28.443474+00:00",
+  "created_at": "2026-09-13T07:49:41.398743+00:00",
   "artifacts": {
     "preprocessed_data": {
       "path": "precomputed/preprocessed_data.pkl",
       "bytes": 2320533,
-      "sha256": "c763280a1c9f8a866ba2c5412333c110bd0083b17d28a57ad773ba185119686a"
+      "sha256": "bd679fb752e2eadef0809e74ae0ba7fb798c5f5c1b943edd09768997be6d8f5e"
     },
     "xgb_baseline": {
       "path": "models/xgb_baseline.pkl",
@@ -18,7 +18,7 @@
     "ensemble": {
       "path": "models/ensemble_model.pkl",
       "bytes": 3063,
-      "sha256": "9209135c67dbac96d68143877ed5e0064efe35bb7fbee60d9c508b1c3700c59f"
+      "sha256": "4c15ac6119a99c90caed91e8b152b3854bd92e409bbf47367b363a50c6e3e2cf"
     },
     "optimized_xgb": {
       "path": "models/optimized_xgb.pkl",
@@ -28,27 +28,27 @@
     "performance": {
       "path": "models/model_performance.pkl",
       "bytes": 1086,
-      "sha256": "bc5e6bc3f45b6e6ca8275348b71fb7c6c78925f957ae15a708b717c3aa51894d"
+      "sha256": "cd0ed8e25f602aa787557f21d65fc74c47d08e38e0f8a44f0f9b558111d344f8"
     },
     "model_metadata": {
       "path": "models/model_metadata.json",
       "bytes": 1267,
-      "sha256": "2abc92e4dd620057bf9bcd2eab494642f9d8a15a969c97cbcf88eeb399058e83"
+      "sha256": "f66cdf05a4e36dbfc8abff50e5d339becf9b1c3c0279085c3fc6c830780f95e1"
     },
     "model_audit": {
       "path": "precomputed/model-audit/model_ablation.json",
-      "bytes": 2354,
-      "sha256": "d066d3f153920f884f9959df5dc4ef642379fbed7a4bd5dcc242b74e156dc6ac"
+      "bytes": 2351,
+      "sha256": "32bbefdd8bb40fa6d09c8466116eb6cf597f66915dbf5dbab600bda2376a54a6"
     },
     "upcoming_fixtures": {
       "path": "data_files/upcoming_fixtures.csv",
-      "bytes": 20637,
-      "sha256": "605c91929673a6ffb4126dd7ce4552c8211b6c5146e591af0e5cdebd80cd486d"
+      "bytes": 20399,
+      "sha256": "f926b66149faaf1d17701260b6116df20d4abfc5496078d2ea56394c7c1514de"
     },
     "upcoming_predictions": {
       "path": "data_files/upcoming_predictions.csv",
-      "bytes": 111300,
-      "sha256": "9faa1b2e5768d67417c33cf02bef01ca1bba89c3c4c6e09f70b26ad1dfdb5777"
+      "bytes": 109859,
+      "sha256": "1772c46b7b66f65641c0dcf5d07ae4ccaa8564a66cb7a2b7586deb3e0a7128f5"
     }
   }
 }

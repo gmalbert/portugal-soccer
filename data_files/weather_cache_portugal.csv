@@ -51,11 +51,11 @@ Temperature,Humidity,WindSpeed,Precipitation,WeatherCondition,WeatherDescription
 24.33249855041504,54.0,2.473863363265991,0.0,Fog,Fog,Rio Ave_2026-09-14,Rio Ave
 31.684499740600582,37.0,3.733630895614624,0.0,Clear sky,Clear sky,Moreirense_2026-09-14,Moreirense
 32.12649917602539,36.0,3.0265491008758545,0.0,Clear sky,Clear sky,Sp Braga_2026-09-14,Sp Braga
-25.765501022338867,56.0,1.7029386758804321,0.0,Partly cloudy,Partly cloudy,Nacional_2026-09-19,Nacional
-31.481000900268555,28.0,0.6324555277824402,0.0,Mainly clear,Mainly clear,Gil Vicente_2026-09-19,Gil Vicente
-33.50100326538086,24.0,1.523154616355896,0.0,Mainly clear,Mainly clear,Alverca_2026-09-19,Alverca
-30.554000854492188,32.0,3.041381359100342,0.0,Clear sky,Clear sky,Sp Lisbon_2026-09-19,Sp Lisbon
-33.51150131225586,22.0,2.184032917022705,0.0,Clear sky,Clear sky,Guimaraes_2026-09-20,Guimaraes
-25.832000732421875,55.26200485229492,3.6912057399749756,0.0,Light drizzle,Light drizzle,Santa Clara_2026-09-20,Santa Clara
-31.99049949645996,33.0,1.9416488409042358,0.0,Clear sky,Clear sky,Estoril_2026-09-20,Estoril
-31.127498626708984,26.0,3.3941125869750977,0.0,Clear sky,Clear sky,Porto_2026-09-20,Porto
+25.715499877929688,54.0,2.118962049484253,0.0,Partly cloudy,Partly cloudy,Nacional_2026-09-19,Nacional
+30.481000900268555,39.0,2.193171262741089,0.0,Clear sky,Clear sky,Gil Vicente_2026-09-19,Gil Vicente
+32.4010009765625,28.0,2.469817876815796,0.0,Mainly clear,Mainly clear,Alverca_2026-09-19,Alverca
+30.304000854492188,33.0,2.6248810291290283,0.0,Mainly clear,Mainly clear,Sp Lisbon_2026-09-19,Sp Lisbon
+33.97500228881836,25.0,0.8062257766723633,0.0,Clear sky,Clear sky,Guimaraes_2026-09-20,Guimaraes
+25.73200035095215,52.14450454711914,4.513590335845947,0.0,Mainly clear,Mainly clear,Santa Clara_2026-09-20,Santa Clara
+28.84549903869629,38.0,2.8460500240325928,0.0,Mainly clear,Mainly clear,Estoril_2026-09-20,Estoril
+32.38050079345703,38.0,4.031128883361816,0.0,Mainly clear,Mainly clear,Porto_2026-09-20,Porto

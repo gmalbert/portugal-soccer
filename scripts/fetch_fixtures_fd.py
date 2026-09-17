@@ -18,7 +18,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
-from team_name_mapping import normalize_team_name
+from pitch_oracle_core.team_mappings import normalize_team_name
 
 ROOT = Path(__file__).resolve().parents[1]
 

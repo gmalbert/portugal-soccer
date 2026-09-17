@@ -1,7 +1,7 @@
 # Keep the public index authoritative for ordinary packages. The deployment
 # runtime only needs the consumer-facing prediction app.
 --index-url https://pypi.org/simple
-pitch-oracle-core[consumer] @ git+https://github.com/gmalbert/pitch-oracle-core.git@bf957d033d2094df6d997ecc21d88ec3b66e94a3
+pitch-oracle-core[consumer] @ git+https://github.com/gmalbert/pitch-oracle-core.git@ac8594de41f8ac0a2f89de4f521ff6f324ace799
 streamlit==1.60.0
 numpy==2.4.6
 pandas==3.0.5

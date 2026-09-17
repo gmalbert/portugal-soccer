@@ -25,7 +25,7 @@ if str(ROOT) not in sys.path:
 load_dotenv(ROOT / ".env", override=False)
 
 from bzzoiro_football_api import get_events, get_event_detail  # noqa: E402
-from team_name_mapping import normalize_team_name  # noqa: E402
+from pitch_oracle_core.team_mappings import normalize_team_name  # noqa: E402
 
 
 def fetch_referees(

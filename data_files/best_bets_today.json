@@ -1,61 +1,10 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-09-20T07:32:05.763896+00:00",
+    "generated_at": "2026-09-21T07:45:49.939517+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026"
+    "season": "2026",
+    "notes": "No qualifying Primeira Liga picks"
   },
-  "bets": [
-    {
-      "game_date": "2026-09-20",
-      "game_time": "15:30",
-      "game": "Moreirense @ Guimaraes",
-      "home_team": "Guimaraes",
-      "away_team": "Moreirense",
-      "bet_type": "Match Result",
-      "pick": "Away Win",
-      "confidence": 0.2926,
-      "edge": 0.1604,
-      "market_probability": 0.1322,
-      "expected_value": 1.0483,
-      "tier": "Elite",
-      "odds": 600,
-      "line": null,
-      "league": "Primeira Liga"
-    },
-    {
-      "game_date": "2026-09-20",
-      "game_time": "18:00",
-      "game": "Casa Pia @ Estoril",
-      "home_team": "Estoril",
-      "away_team": "Casa Pia",
-      "bet_type": "Match Result",
-      "pick": "Away Win",
-      "confidence": 0.2952,
-      "edge": 0.0855,
-      "market_probability": 0.2097,
-      "expected_value": 0.3109,
-      "tier": "Elite",
-      "odds": 344,
-      "line": null,
-      "league": "Primeira Liga"
-    },
-    {
-      "game_date": "2026-09-20",
-      "game_time": "20:30",
-      "game": "Benfica @ Porto",
-      "home_team": "Porto",
-      "away_team": "Benfica",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.4602,
-      "edge": 0.1163,
-      "market_probability": 0.344,
-      "expected_value": 0.2518,
-      "tier": "Elite",
-      "odds": 172,
-      "line": null,
-      "league": "Primeira Liga"
-    }
-  ]
+  "bets": []
 }

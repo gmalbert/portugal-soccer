@@ -59,5 +59,8 @@ Temperature,Humidity,WindSpeed,Precipitation,WeatherCondition,WeatherDescription
 25.73200035095215,50.65607452392578,4.72890043258667,0.0,Overcast,Overcast,Santa Clara_2026-09-20,Santa Clara
 26.695499420166016,43.0,3.471311092376709,0.0,Partly cloudy,Partly cloudy,Estoril_2026-09-20,Estoril
 32.730499267578125,27.0,4.327816963195801,0.0,Mainly clear,Mainly clear,Porto_2026-09-20,Porto
-19.61050033569336,51.0,2.4839484691619873,0.0,Moderate drizzle,Moderate drizzle,Moreirense_2026-10-09,Moreirense
-16.85650062561035,66.0,2.0591259002685547,0.0,Moderate drizzle,Moderate drizzle,Sp Braga_2026-10-09,Sp Braga
+27.910499572753906,40.0,4.957822322845459,0.0,Overcast,Overcast,Moreirense_2026-10-09,Moreirense
+27.35650062561035,41.0,4.63249397277832,0.0,Overcast,Overcast,Sp Braga_2026-10-09,Sp Braga
+22.780498504638672,51.0,8.70976448059082,0.0,Overcast,Overcast,Casa Pia_2026-10-10,Casa Pia
+22.024999618530273,80.0,5.099019527435303,0.0,Light drizzle,Light drizzle,Maritimo_2026-10-10,Maritimo
+22.188499450683594,38.0,4.701064109802246,0.0,Overcast,Overcast,Academico Viseu_2026-10-10,Academico Viseu

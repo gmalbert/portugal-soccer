@@ -1,10 +1,78 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-10-03T12:42:31.005153+00:00",
+    "generated_at": "2026-10-04T13:18:03.696433+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026",
-    "notes": "No qualifying Primeira Liga picks"
+    "season": "2026"
   },
-  "bets": []
+  "bets": [
+    {
+      "game_date": "2026-10-09",
+      "game_time": "18:45",
+      "game": "Gil Vicente @ Moreirense",
+      "home_team": "Moreirense",
+      "away_team": "Gil Vicente",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.4523,
+      "edge": 0.1719,
+      "market_probability": 0.2804,
+      "expected_value": 0.4926,
+      "tier": "Elite",
+      "odds": 230,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-10",
+      "game_time": "15:30",
+      "game": "Santa Clara @ Casa Pia",
+      "home_team": "Casa Pia",
+      "away_team": "Santa Clara",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.409,
+      "edge": 0.2046,
+      "market_probability": 0.2044,
+      "expected_value": 0.8405,
+      "tier": "Elite",
+      "odds": 350,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-10",
+      "game_time": "18:00",
+      "game": "Porto @ Maritimo",
+      "home_team": "Maritimo",
+      "away_team": "Porto",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.3975,
+      "edge": 0.2826,
+      "market_probability": 0.115,
+      "expected_value": 2.1801,
+      "tier": "Elite",
+      "odds": 700,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-10",
+      "game_time": "18:00",
+      "game": "Porto @ Maritimo",
+      "home_team": "Maritimo",
+      "away_team": "Porto",
+      "bet_type": "Match Result",
+      "pick": "Draw",
+      "confidence": 0.2624,
+      "edge": 0.0688,
+      "market_probability": 0.1936,
+      "expected_value": 0.2464,
+      "tier": "Elite",
+      "odds": 375,
+      "line": null,
+      "league": "Primeira Liga"
+    }
+  ]
 }

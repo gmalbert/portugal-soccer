@@ -1,7 +1,7 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-10-04T13:18:03.696433+00:00",
+    "generated_at": "2026-10-05T16:09:34.520743+00:00",
     "model_version": "core-1.4.3",
     "season": "2026"
   },
@@ -71,6 +71,23 @@
       "expected_value": 0.2464,
       "tier": "Elite",
       "odds": 375,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-10",
+      "game_time": "20:30",
+      "game": "Estoril @ Academico Viseu",
+      "home_team": "Academico Viseu",
+      "away_team": "Estoril",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.4926,
+      "edge": 0.078,
+      "market_probability": 0.4146,
+      "expected_value": 0.1084,
+      "tier": "Strong",
+      "odds": 125,
       "line": null,
       "league": "Primeira Liga"
     }

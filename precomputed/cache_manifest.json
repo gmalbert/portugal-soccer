@@ -3,12 +3,12 @@
   "core_version": "1.4.3",
   "feature_policy_version": 3,
   "league": "portugal",
-  "created_at": "2026-10-11T14:09:15.138175+00:00",
+  "created_at": "2026-10-12T16:49:35.606032+00:00",
   "artifacts": {
     "preprocessed_data": {
       "path": "precomputed/preprocessed_data.pkl",
       "bytes": 2326152,
-      "sha256": "01368ff949d4c590a8589db5d8081591c2c1ebee8a3497d040dc94075764ecca"
+      "sha256": "2ca56d76b3753c0307e8d2785b6e9960a25346dd68a613c7ed7362122c6996be"
     },
     "xgb_baseline": {
       "path": "models/xgb_baseline.pkl",
@@ -33,7 +33,7 @@
     "model_metadata": {
       "path": "models/model_metadata.json",
       "bytes": 1267,
-      "sha256": "4e887273bae88120876f99f23d6eb9bb1b02f598676156f5cd3e87221433449e"
+      "sha256": "eb305fc127d42f473d354cc081fb1077c561cb9d5ce40618ff9164b32c09d425"
     },
     "model_audit": {
       "path": "precomputed/model-audit/model_ablation.json",
@@ -42,13 +42,13 @@
     },
     "upcoming_fixtures": {
       "path": "data_files/upcoming_fixtures.csv",
-      "bytes": 18896,
-      "sha256": "5eb3af586bae84c42b3324b18add6165498d47976d901088c00efcaa14f9dd27"
+      "bytes": 18666,
+      "sha256": "a24d98bc089ddf3043ac69354df44ff5f53206f0e9fc176ab63ca593b2f4956e"
     },
     "upcoming_predictions": {
       "path": "data_files/upcoming_predictions.csv",
-      "bytes": 101463,
-      "sha256": "667baf611c7d74a6febfbee284859c37336edb3b8a9f3cd6917cb9c140f1a46d"
+      "bytes": 100235,
+      "sha256": "101163516fa01c1d695343e9381052fe19208d437469c50f77ebb15231fe062c"
     },
     "dixon_coles_goal_model": {
       "path": "models/dixon_coles_goal_model.pkl",
@@ -58,7 +58,7 @@
     "dixon_coles_goal_model_metadata": {
       "path": "models/dixon_coles_goal_model.json",
       "bytes": 2088,
-      "sha256": "79a57f18dfda7ca631fdea5fefd67c38db0e03c94edd2e510bf2badc01fc0021"
+      "sha256": "c28af65cfa8f7382708cbd4897e5d2781195e739ed54a482d3b3907c161ce84a"
     },
     "goal_model_metrics": {
       "path": "models/goal_model_metrics.json",

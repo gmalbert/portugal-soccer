@@ -1,27 +1,10 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-10-12T16:49:34.088474+00:00",
+    "generated_at": "2026-10-13T15:08:37.369295+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026"
+    "season": "2026",
+    "notes": "No qualifying Primeira Liga picks"
   },
-  "bets": [
-    {
-      "game_date": "2026-10-12",
-      "game_time": "20:15",
-      "game": "Alverca @ Famalicao",
-      "home_team": "Famalicao",
-      "away_team": "Alverca",
-      "bet_type": "Match Result",
-      "pick": "Away Win",
-      "confidence": 0.3062,
-      "edge": 0.084,
-      "market_probability": 0.2223,
-      "expected_value": 0.2832,
-      "tier": "Elite",
-      "odds": 319,
-      "line": null,
-      "league": "Primeira Liga"
-    }
-  ]
+  "bets": []
 }

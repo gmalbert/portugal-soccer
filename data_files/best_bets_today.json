@@ -1,10 +1,27 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-10-17T11:59:53.247930+00:00",
+    "generated_at": "2026-10-18T12:25:41.975428+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026",
-    "notes": "No qualifying Primeira Liga picks"
+    "season": "2026"
   },
-  "bets": []
+  "bets": [
+    {
+      "game_date": "2026-10-23",
+      "game_time": "20:45",
+      "game": "Maritimo @ Guimaraes",
+      "home_team": "Guimaraes",
+      "away_team": "Maritimo",
+      "bet_type": "Match Result",
+      "pick": "Away Win",
+      "confidence": 0.2906,
+      "edge": 0.1336,
+      "market_probability": 0.1569,
+      "expected_value": 0.6708,
+      "tier": "Elite",
+      "odds": 475,
+      "line": null,
+      "league": "Primeira Liga"
+    }
+  ]
 }

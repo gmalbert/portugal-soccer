@@ -1,7 +1,7 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-10-19T15:05:50.436778+00:00",
+    "generated_at": "2026-10-20T13:07:09.894906+00:00",
     "model_version": "core-1.4.3",
     "season": "2026"
   },
@@ -20,6 +20,40 @@
       "expected_value": 0.6708,
       "tier": "Elite",
       "odds": 475,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-24",
+      "game_time": "20:30",
+      "game": "Porto @ Gil Vicente",
+      "home_team": "Gil Vicente",
+      "away_team": "Porto",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.3881,
+      "edge": 0.2658,
+      "market_probability": 0.1222,
+      "expected_value": 1.9104,
+      "tier": "Elite",
+      "odds": 650,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-10-24",
+      "game_time": "20:30",
+      "game": "Porto @ Gil Vicente",
+      "home_team": "Gil Vicente",
+      "away_team": "Porto",
+      "bet_type": "Match Result",
+      "pick": "Draw",
+      "confidence": 0.2502,
+      "edge": 0.0319,
+      "market_probability": 0.2183,
+      "expected_value": 0.0507,
+      "tier": "Good",
+      "odds": 320,
       "line": null,
       "league": "Primeira Liga"
     }

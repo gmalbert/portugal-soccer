@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from scripts.bzzoiro_retry import retry_connection_errors
+
 load_dotenv(ROOT / ".env", override=False)
 
 from bzzoiro_football_api import get_events, get_event_detail, normalize_bzzoiro_team  # noqa: E402
@@ -34,7 +36,9 @@ def fetch_odds(
     today = date.today()
     date_to = (today + timedelta(days=days_ahead)).isoformat()
 
-    events = get_events(league, date_from=today.isoformat(), date_to=date_to, status="notstarted")
+    events = retry_connection_errors(
+        get_events, league, date_from=today.isoformat(), date_to=date_to, status="notstarted"
+    )
     if not events:
         print(f"No upcoming {league} events found from {today} to {date_to}", flush=True)
         out = Path(output_dir or ROOT / "data_files")
@@ -47,7 +51,7 @@ def fetch_odds(
     rows = []
     for evt in events:
         event_id = evt["id"]
-        detail = get_event_detail(event_id)
+        detail = retry_connection_errors(get_event_detail, event_id)
         home = normalize_bzzoiro_team(evt.get("home_team", ""))
         away = normalize_bzzoiro_team(evt.get("away_team", ""))
         match_date = evt.get("event_date", "")[:10]

@@ -22,6 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from scripts.bzzoiro_retry import retry_connection_errors
+
 load_dotenv(ROOT / ".env", override=False)
 
 from bzzoiro_football_api import get_events, get_event_detail  # noqa: E402
@@ -42,7 +44,9 @@ def fetch_referees(
     except Exception:
         pass
 
-    events = get_events(league, date_from=today.isoformat(), date_to=date_to, status="notstarted")
+    events = retry_connection_errors(
+        get_events, league, date_from=today.isoformat(), date_to=date_to, status="notstarted"
+    )
     if not events:
         print(f"No upcoming {league} events from {today} to {date_to}", flush=True)
         _write_empty(output_dir)
@@ -51,7 +55,7 @@ def fetch_referees(
     rows = []
     assigned = 0
     for evt in events:
-        detail = get_event_detail(evt["id"])
+        detail = retry_connection_errors(get_event_detail, evt["id"])
         ref = detail.get("referee")
         if not ref or not ref.get("name"):
             continue

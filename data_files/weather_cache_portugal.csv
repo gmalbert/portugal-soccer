@@ -86,11 +86,11 @@ Temperature,Humidity,WindSpeed,Precipitation,WeatherCondition,WeatherDescription
 22.207000732421875,44.0,0.8485281467437744,0.0,Mainly clear,Mainly clear,Sp Braga_2026-11-01,Sp Braga
 25.21500015258789,31.0,1.8110769987106323,0.0,Clear sky,Clear sky,Benfica_2026-11-02,Benfica
 22.06100082397461,51.0,1.2649110555648804,0.0,Overcast,Overcast,Gil Vicente_2026-11-02,Gil Vicente
-13.940999984741211,63.0,1.4560219049453735,0.5,Slight rain showers,Slight rain showers,Famalicao_2026-11-06,Famalicao
-19.946998596191406,97.0,9.06862735748291,2.700000047683716,Thunderstorm,Thunderstorm,Nacional_2026-11-07,Nacional
-18.88399887084961,88.0,1.6643316745758057,0.20000000298023224,Slight rain showers,Slight rain showers,Alverca_2026-11-07,Alverca
-19.445499420166016,78.0,2.630589008331299,0.10000000149011612,Slight rain showers,Slight rain showers,Sp Lisbon_2026-11-07,Sp Lisbon
-20.27750015258789,90.0,5.015974521636963,0.0,Thunderstorm,Thunderstorm,Estoril_2026-11-08,Estoril
-17.98200035095215,69.78168487548828,6.876772403717041,0.4000000059604645,Slight rain showers,Slight rain showers,Santa Clara_2026-11-08,Santa Clara
-17.605499267578125,79.0,2.720294237136841,0.800000011920929,Slight rain showers,Slight rain showers,Guimaraes_2026-11-08,Guimaraes
-18.957500457763672,79.0,4.4418463706970215,0.5,Slight rain showers,Slight rain showers,Rio Ave_2026-11-08,Rio Ave
+12.640999794006348,73.0,3.4058773517608643,1.0,Slight rain showers,Slight rain showers,Famalicao_2026-11-06,Famalicao
+20.097000122070312,96.0,11.783462524414062,2.0,Moderate rain showers,Moderate rain showers,Nacional_2026-11-07,Nacional
+22.43400001525879,53.0,2.0880613327026367,0.0,Overcast,Overcast,Alverca_2026-11-07,Alverca
+21.995500564575195,53.0,2.280350923538208,0.0,Overcast,Overcast,Sp Lisbon_2026-11-07,Sp Lisbon
+19.067501068115234,94.0,7.433034420013428,0.4000000059604645,Thunderstorm,Thunderstorm,Estoril_2026-11-08,Estoril
+18.631999969482422,70.82635498046875,8.129268646240234,0.30000001192092896,Slight rain showers,Slight rain showers,Santa Clara_2026-11-08,Santa Clara
+21.33449935913086,64.0,2.842534065246582,0.0,Moderate rain,Moderate rain,Guimaraes_2026-11-08,Guimaraes
+18.990999221801758,74.0,3.5846896171569824,0.20000000298023224,Slight rain showers,Slight rain showers,Rio Ave_2026-11-08,Rio Ave

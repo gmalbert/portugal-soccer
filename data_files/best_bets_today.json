@@ -1,44 +1,10 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-11-08T14:22:23.122727+00:00",
+    "generated_at": "2026-11-09T17:37:34.847157+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026"
+    "season": "2026",
+    "notes": "No qualifying Primeira Liga picks"
   },
-  "bets": [
-    {
-      "game_date": "2026-11-08",
-      "game_time": "15:30",
-      "game": "Gil Vicente @ Santa Clara",
-      "home_team": "Santa Clara",
-      "away_team": "Gil Vicente",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.468,
-      "edge": 0.0481,
-      "market_probability": 0.4199,
-      "expected_value": 0.0389,
-      "tier": "Good",
-      "odds": 122,
-      "line": null,
-      "league": "Primeira Liga"
-    },
-    {
-      "game_date": "2026-11-08",
-      "game_time": "18:00",
-      "game": "Porto @ Guimaraes",
-      "home_team": "Guimaraes",
-      "away_team": "Porto",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.409,
-      "edge": 0.2149,
-      "market_probability": 0.1942,
-      "expected_value": 0.943,
-      "tier": "Elite",
-      "odds": 375,
-      "line": null,
-      "league": "Primeira Liga"
-    }
-  ]
+  "bets": []
 }

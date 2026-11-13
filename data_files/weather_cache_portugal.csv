@@ -95,4 +95,8 @@ Temperature,Humidity,WindSpeed,Precipitation,WeatherCondition,WeatherDescription
 18.89699935913086,93.0,11.74436092376709,1.2999999523162842,Thunderstorm,Thunderstorm,Nacional_2026-11-08,Nacional
 20.83449935913086,55.0,4.579301357269287,0.0,Slight rain,Slight rain,Guimaraes_2026-11-08,Guimaraes
 21.840999603271484,54.0,7.244998455047607,0.0,Slight rain showers,Slight rain showers,Rio Ave_2026-11-08,Rio Ave
-18.67500114440918,78.0,3.3241539001464844,1.2999999523162842,Slight rain showers,Slight rain showers,Maritimo_2026-11-27,Maritimo
+21.107500076293945,91.43790435791016,4.274634838104248,0.30000001192092896,Light drizzle,Light drizzle,Maritimo_2026-11-27,Maritimo
+8.910499572753906,89.0,2.433104991912842,0.10000000149011612,Dense drizzle,Dense drizzle,Moreirense_2026-11-28,Moreirense
+7.998000144958496,86.0,2.8284270763397217,0.699999988079071,Dense drizzle,Dense drizzle,Arouca_2026-11-28,Arouca
+6.188499927520752,92.0,3.6891732215881348,1.0,Moderate rain showers,Moderate rain showers,Academico Viseu_2026-11-28,Academico Viseu
+8.74799919128418,89.0,2.433104991912842,0.10000000149011612,Dense drizzle,Dense drizzle,Guimaraes_2026-11-28,Guimaraes

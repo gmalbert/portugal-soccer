@@ -1,10 +1,61 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-11-23T19:19:44.694858+00:00",
+    "generated_at": "2026-11-24T18:58:21.125691+00:00",
     "model_version": "core-1.4.3",
-    "season": "2026",
-    "notes": "No qualifying Primeira Liga picks"
+    "season": "2026"
   },
-  "bets": []
+  "bets": [
+    {
+      "game_date": "2026-11-28",
+      "game_time": "15:30",
+      "game": "Santa Clara @ Moreirense",
+      "home_team": "Moreirense",
+      "away_team": "Santa Clara",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.4563,
+      "edge": 0.174,
+      "market_probability": 0.2823,
+      "expected_value": 0.5058,
+      "tier": "Elite",
+      "odds": 230,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-11-28",
+      "game_time": "15:30",
+      "game": "Rio Ave @ Arouca",
+      "home_team": "Arouca",
+      "away_team": "Rio Ave",
+      "bet_type": "Match Result",
+      "pick": "Away Win",
+      "confidence": 0.2574,
+      "edge": 0.0635,
+      "market_probability": 0.1939,
+      "expected_value": 0.2383,
+      "tier": "Elite",
+      "odds": 381,
+      "line": null,
+      "league": "Primeira Liga"
+    },
+    {
+      "game_date": "2026-11-28",
+      "game_time": "18:00",
+      "game": "Alverca @ Academico Viseu",
+      "home_team": "Academico Viseu",
+      "away_team": "Alverca",
+      "bet_type": "Match Result",
+      "pick": "Home Win",
+      "confidence": 0.4857,
+      "edge": 0.1184,
+      "market_probability": 0.3673,
+      "expected_value": 0.2337,
+      "tier": "Elite",
+      "odds": 154,
+      "line": null,
+      "league": "Primeira Liga"
+    }
+  ]
 }

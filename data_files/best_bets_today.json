@@ -1,7 +1,7 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-11-24T18:58:21.125691+00:00",
+    "generated_at": "2026-11-25T18:01:36.713877+00:00",
     "model_version": "core-1.4.3",
     "season": "2026"
   },
@@ -15,11 +15,11 @@
       "bet_type": "Match Result",
       "pick": "Home Win",
       "confidence": 0.4563,
-      "edge": 0.174,
-      "market_probability": 0.2823,
-      "expected_value": 0.5058,
+      "edge": 0.1641,
+      "market_probability": 0.2922,
+      "expected_value": 0.4556,
       "tier": "Elite",
-      "odds": 230,
+      "odds": 219,
       "line": null,
       "league": "Primeira Liga"
     },
@@ -32,11 +32,11 @@
       "bet_type": "Match Result",
       "pick": "Away Win",
       "confidence": 0.2574,
-      "edge": 0.0635,
-      "market_probability": 0.1939,
-      "expected_value": 0.2383,
+      "edge": 0.0628,
+      "market_probability": 0.1946,
+      "expected_value": 0.2331,
       "tier": "Elite",
-      "odds": 381,
+      "odds": 379,
       "line": null,
       "league": "Primeira Liga"
     },
@@ -49,11 +49,11 @@
       "bet_type": "Match Result",
       "pick": "Home Win",
       "confidence": 0.4857,
-      "edge": 0.1184,
-      "market_probability": 0.3673,
-      "expected_value": 0.2337,
+      "edge": 0.1202,
+      "market_probability": 0.3655,
+      "expected_value": 0.2434,
       "tier": "Elite",
-      "odds": 154,
+      "odds": 156,
       "line": null,
       "league": "Primeira Liga"
     }

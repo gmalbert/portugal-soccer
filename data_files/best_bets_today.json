@@ -1,45 +1,11 @@
 {
   "meta": {
     "sport": "portugal",
-    "generated_at": "2026-11-27T17:31:59.100699+00:00",
+    "generated_at": "2026-11-28T16:15:37.023422+00:00",
     "model_version": "core-1.4.3",
     "season": "2026"
   },
   "bets": [
-    {
-      "game_date": "2026-11-28",
-      "game_time": "15:30",
-      "game": "Santa Clara @ Moreirense",
-      "home_team": "Moreirense",
-      "away_team": "Santa Clara",
-      "bet_type": "Match Result",
-      "pick": "Home Win",
-      "confidence": 0.4563,
-      "edge": 0.159,
-      "market_probability": 0.2973,
-      "expected_value": 0.4328,
-      "tier": "Elite",
-      "odds": 214,
-      "line": null,
-      "league": "Primeira Liga"
-    },
-    {
-      "game_date": "2026-11-28",
-      "game_time": "15:30",
-      "game": "Rio Ave @ Arouca",
-      "home_team": "Arouca",
-      "away_team": "Rio Ave",
-      "bet_type": "Match Result",
-      "pick": "Away Win",
-      "confidence": 0.2574,
-      "edge": 0.0647,
-      "market_probability": 0.1928,
-      "expected_value": 0.2486,
-      "tier": "Elite",
-      "odds": 385,
-      "line": null,
-      "league": "Primeira Liga"
-    },
     {
       "game_date": "2026-11-28",
       "game_time": "18:00",
@@ -49,11 +15,11 @@
       "bet_type": "Match Result",
       "pick": "Home Win",
       "confidence": 0.4857,
-      "edge": 0.1237,
-      "market_probability": 0.362,
-      "expected_value": 0.2531,
+      "edge": 0.1262,
+      "market_probability": 0.3595,
+      "expected_value": 0.2579,
       "tier": "Elite",
-      "odds": 158,
+      "odds": 159,
       "line": null,
       "league": "Primeira Liga"
     },
